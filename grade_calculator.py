@@ -138,7 +138,7 @@ def search_student(names, results):
 
 def save_to_file(names, marks, results):
     """Save results to a text file"""
-    with open("grade_results.txt", "w") as f:
+    with open("test_students.txt", "w") as f:
         f.write("STUDENT GRADE REPORT\n")
         f.write("=" * 40 + "\n\n")
 
@@ -150,7 +150,7 @@ def save_to_file(names, marks, results):
             f.write(f"Comment: {results[i]['comment']}\n")
             f.write("-" * 30 + "\n")
 
-    print("\n✓ Results saved to grade_results.txt")
+    print("\n✓ Results saved to test_students.txt")
 
 
 def menu():
